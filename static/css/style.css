@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.logoName {
+    display: flex;
+    align-items: center;
+}
+.pin {
+    width: 40px;  
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: -10px -10px;
+    background-color: #d9d5d5;
+    padding: 20px 20px;
+    align-items: flex-start;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+}
+
+.search-container {
+    flex-direction: row; 
+    margin-bottom: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#city-input {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+

@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <title>Weatheress</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="logoName">
+            <img src="../static/images/pin.png" alt="logo" class="pin">
+            <h1>Weatheress</h1>
+        </div>
+        <div class="header-content">
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Введите город">
+                <button id="search-button">Поиск</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="current-weather">
+            <h2>Погода на текущий момент</h2>
+            <div id="current-weather-info">
+                <!-- Здесь будет информация о погоде на текущий момент -->
+            </div>
+        </section>
+        <section class="weekly-weather">
+            <h2>Погода на 7 дней</h2>
+            <div id="weekly-weather-info">
+                <!-- Здесь будет информация о погоде на 7 дней -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
