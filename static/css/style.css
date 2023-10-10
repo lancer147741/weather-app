@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background: #e3e7ec;
 }
 .logoName {
     display: flex;
@@ -95,5 +96,13 @@ h1 {
 }
 .current-weather, .weekly-weather {
     margin-bottom: 20px;
+}
+.TempNow {
+    color: white;
+    font-size: 50px;
+}
+.DescriptionNow {
+    color: white;
+    font-size: 20px;
 }
 

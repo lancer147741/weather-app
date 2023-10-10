@@ -14,30 +14,29 @@
             <img src="../static/images/pin.png" alt="logo" class="pin">
             <h1>Weatheress</h1>
         </div>
-        <div class="header-content">
-            <div class="search-container">
-                <input type="text" id="city-input" placeholder="Введите город">
-                <button id="search-button">Поиск</button>
+        <form method="POST">
+            <div class="header-content">
+                <div class="search-container">
+                    <input type="text" name="city" id="city-input" placeholder="Введите город">
+                    <button type="submit" id="search-button">Поиск</button>
+                </div>
             </div>
-        </div>
+        </form>
     </header>
     <main>
         <section class="current-weather">
-            <h2>Погода на текущий момент</h2>
+            <h2>Погода в {{ city }}</h2>
             <div id="current-weather-info">
+                <p class="TempNow">{{ current_temperature}}°C</p>
+                <p class="DescriptionNow">{{ weather_description }}</p>
             </div>
         </section>
         <section class="weekly-weather">
             <h2>Погода на 7 дней</h2>
             <div id="weekly-weather-info">
-                <p class="paragraph7d">Погода 1</p>
-                <p class="paragraph7d">Погода 2</p>
-                <p class="paragraph7d">Погода 3</p>
-                <p class="paragraph7d">Погода 4</p>
-                <p class="paragraph7d">Погода 5</p>
-                <p class="paragraph7d">Погода 6</p>
-                <p class="paragraph7d">Погода 7</p>
-                <!-- Здесь будет информация о погоде на 7 дней -->
+                {% for day in forecast %}
+                <p class="paragraph7d">{{ day.date }}: {{ day.temperature }}°C, {{ day.description }}</p>
+                {% endfor %}
             </div>
         </section>
     </main>
