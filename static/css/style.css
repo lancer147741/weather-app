@@ -5,13 +5,19 @@ body {
     display: flex;
     align-items: center;
 }
+.logoName h1 {
+    color: #243042;
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
 .pin {
-    width: 40px;  
+    width: 70px;  
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    margin: -10px -10px;
     background-color: #d9d5d5;
     padding: 20px 20px;
     align-items: flex-start;
@@ -26,20 +32,25 @@ header {
 
 h1 {
     margin: 0;
+    display: flex;
 }
 
 .search-container {
     flex-direction: row; 
     margin-left: auto;
+    margin-bottom: auto;
     align-items: center;
+    display: flex;
 }
 
 #city-input {
     width: 500px;
     padding: 10px;
+    margin-bottom: 12px;
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-right: 5px;
+    margin-top: 12px;
 }
 
 #search-button {
@@ -76,10 +87,19 @@ h1 {
 #weekly-weather-info p {
     flex: 1;                                  
     text-align: center;                       
-    border-left: 4px solid rgb(61, 70, 73);    
-    padding: 10px;
+    border-left: 1px solid rgb(61, 70, 73);    
 }
 
 #weekly-weather-info p:first-child {         
     border-left: none;                        
+}
+.current-weather, .weekly-weather {
+    margin-bottom: 20px;
+}
+#current-weather-info, #weekly-weather-info {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-top: 10px;
 }
