@@ -96,10 +96,4 @@ h1 {
 .current-weather, .weekly-weather {
     margin-bottom: 20px;
 }
-#current-weather-info, #weekly-weather-info {
-    background-color: #e6f7ff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    margin-top: 10px;
-}
+
