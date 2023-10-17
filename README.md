@@ -5,18 +5,23 @@ Weatheress is a simple web application that provides the current weather and a 7
 To get started with Weatheress, follow the below instructions to set up the project on your local machine.
 
 ## Prerequisites
-Python 3.7 or higher
-Flask
-requests
-dotenv
-Installation
-##Clone the repository:
 
-```git clone https://github.com/your-username/weatheress.git ```
+Python 3.7 or higher
+
+Flask
+
+requests
+
+dotenv
+
+
+## Clone the repository:
+
+```git clone https://github.com/your-username/weather-app.git ```
 
 Navigate to the project directory:
 
-```cd weatheress```
+```cd weather-app```
 
 Install the dependencies:
 
